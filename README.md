@@ -40,6 +40,5 @@ A Java-based system to efficiently ingest, store, and process large volumes of r
 - Data Scientists: Query processed data for ML and analytics  
 - External Clients: Securely consume data via APIs  
 
-## Contribution
-Contributions are welcome! Please fork the repository and submit pull requests with clear descriptions
+
 
