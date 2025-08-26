@@ -1,64 +1,45 @@
 # Big-Data-Storage-Processing
-Big Data Storage and Processing System
-Project Overview
-A Java-based system designed to efficiently ingest, store, and process large volumes of real-time data from IoT and other sources. Utilizes Hadoop HDFS for distributed storage and Apache Spark for batch and stream processing, enabling advanced analytics and machine learning integrations.
+# Big Data Storage and Processing System
 
-Features
-Real-time data ingestion from multiple sources
+## Project Overview
+A Java-based system to efficiently ingest, store, and process large volumes of real-time data. Utilizes Hadoop HDFS for distributed storage and Apache Spark for batch and streaming analytics, with APIs supporting machine learning integration.
 
-Fault-tolerant distributed storage with Hadoop HDFS
+## Features
+- Real-time data ingestion from multiple IoT and other sources  
+- Distributed, fault-tolerant storage using Hadoop HDFS  
+- Batch and stream processing with Apache Spark  
+- Secure RESTful APIs for data querying  
+- Data encryption and role-based access control  
+- Integration with ML models for predictive analytics  
 
-Batch and streaming data processing using Apache Spark
+## Technology Stack
+- Java (Core Java, multi-threading, networking)  
+- Apache Hadoop, Apache Spark, HDFS  
+- Kafka or MQTT for data ingestion  
+- Spring Boot (optional) backend  
+- NoSQL databases (HBase/Cassandra)  
+- OAuth2/JWT for security  
 
-Secure REST APIs for data access and querying
+## Installation and Setup
+1. Install Java JDK 11 or higher  
+2. Set up Hadoop and Spark clusters or use cloud services  
+3. Configure data ingestion with Kafka or MQTT brokers  
+4. Build the Java modules using Maven or Gradle  
+5. Configure database and security settings  
+6. Run the backend server and APIs  
+7. Integrate machine learning modules as needed  
 
-Data encryption and role-based access control
+## Usage
+- Stream data into the system using ingestion service  
+- Access data and analytics via REST APIs  
+- Monitor system performance using dashboards (if available)  
 
-Integration with machine learning models for predictive analytics
+## Users and Roles
+- System Administrator: Manage configurations and user roles  
+- Data Engineers: Maintain ingestion pipelines and storage  
+- Data Scientists: Query processed data for ML and analytics  
+- External Clients: Securely consume data via APIs  
 
-Technology Stack
-Java (Core Java, multi-threading, networking)
+## Contribution
+Contributions are welcome! Please fork the repository and submit pull requests with clear descriptions
 
-Hadoop, Spark, HDFS
-
-Kafka or MQTT for data ingestion
-
-Spring Boot backend (optional)
-
-NoSQL databases like HBase or Cassandra
-
-OAuth2/JWT for security
-
-Installation & Setup
-Install Java JDK 11+
-
-Set up Hadoop and Spark clusters or use cloud services
-
-Configure Kafka/MQTT ingestion
-
-Build Java modules (Maven/Gradle)
-
-Configure databases and security
-
-Run backend server and APIs
-
-Integrate ML modules as needed
-
-Usage
-Stream data using ingestion services
-
-Query data via REST APIs
-
-Monitor performance (optional dashboards)
-
-Users & Roles
-System Administrator
-
-Data Engineers
-
-Data Scientists
-
-External API Clients
-
-Contribution
-Fork the repository and submit pull requests with clear descriptions.
