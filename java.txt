@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class BigDataProcessing {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("=== Big Data Text Processing ===");
+        System.out.println("Enter text data (type 'exit' to finish):");
+
+        List<String> lines = new ArrayList<>();
+        while (true) {
+            String line = sc.nextLine();
+            if (line.equalsIgnoreCase("exit")) {
+                break;
+            }
+            if (!line.trim().isEmpty()) {
+                lines.add(line);
+            }
+        }
+
+        String allText = String.join(" ", lines).toLowerCase();
+        String[] words = allText.split("\\W+");
+
+        Map<String, Integer> wordCount = new HashMap<>();
+        for (String word : words) {
+            if (!word.isEmpty()) {
+                wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+            }
+        }
+
+        String longest = "", shortest = words[0];
+        for (String word : words) {
+            if (word.length() > longest.length()) {
+                longest = word;
+            }
+            if (word.length() < shortest.length() && word.length() > 0) {
+                shortest = word;
+            }
+        }
+
+        System.out.println("\n--- Analysis Result ---");
+        System.out.println("Total Lines: " + lines.size());
+        System.out.println("Total Words: " + words.length);
+        System.out.println("Unique Words: " + wordCount.size());
+        System.out.println("Longest Word: " + longest);
+        System.out.println("Shortest Word: " + shortest);
+
+        System.out.println("\nWord Frequency:");
+        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+
+        sc.close();
+    }
+}
